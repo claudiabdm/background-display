@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Quattrocento|Roboto&display=swap');
+*, *::before, *::after {
+box-sizing: border-box;
+}
+/* -------------------------------------- */
+/* Reset                                  */
+/* -------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* Iniciación de la propiedad "display" para etiquetas de HTML5 para navegadores antiguos */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol, ul {
+   list-style: none;
+}
+blockquote, q {
+   quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+   content: '';
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/* -------------------------------------- */
+/* // Reset                               */
+/* -------------------------------------- */
+
+
+/* -------------------------------------- */
+/* HTML                                   */
+/* -------------------------------------- */
+html {
+    margin: 1rem;
+    background: white url("../img/butterflies.png") right top no-repeat;
+    font-family: 'Quattrocento', serif;
+    color: #4a4a4a;
+}
+body {
+    width: 75%;
+}
+main {
+    margin: 3.5rem 3rem;
+
+}
+
+.article__title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 1.375rem;
+    margin-bottom: 2rem;
+}
+
+.article__title--subtitle {
+    font-size: 1.375rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+.article__text {
+    line-height: 1.563rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.article__content {
+    height: 369px;
+    background-image: url("../img/book-girl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.article__text--theme-bg{
+    width: 369px;
+    height: 107px;
+    padding: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: #e0209f;
+    
+}
+
+.form {
+    margin-bottom: 2rem;
+}
+
+.form__user{
+    display: block;
+    border: 1.5rem solid #ad180700;
+    padding: 0.5rem;
+    height: 201px;
+    background:  #ad18071f url("../img/children.png") right no-repeat;
+    background-size: 150px 169px;
+    margin-bottom: 2rem;
+}
+
+.form__inplab{
+    margin-bottom: 1rem; 
+    display: block;
+    
+}
+.form__labels {
+    display: inline-block;
+    width: 68px;
+}
+
+.form__input {
+    width: 310px;
+    height: 35px;
+    margin-left: 3rem;
+}
+
+.form__interests {
+   display: block;
+}
+
+.form__checkbox {
+    display: inline-block;
+}
+
+.form__legend--interest {
+    display: inline;
+}
+
+.form__labels--checkbox{
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1rem;
+    width: max-content;
+    background-color: #7a4842;
+    color: white;
+    border: .5rem solid transparent;
+    border-radius: .3rem;
+}
+
+.form__input--checkbox {
+    display: none;
+    width: 10px;
+    height: 10px;
+    margin-left: 1rem;
+}
+
+
+.form__input--checkbox:checked + .form__labels--checkbox {
+    background-color: #7a4842d8;
+}
+
+.form__interests::after {
+    content:"";
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    height: 1px;
+    width: 761px;
+    background-color: #dde2e3;
+}
+
+.btn--submit {
+    width: 150px;
+    height: 45px;
+    background-color: #0091ff;
+    font-size: 20px;
+    border-radius: .5rem;
+    color: white;
+}
